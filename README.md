@@ -8,7 +8,7 @@
 
 
 
-# Stock-Portfolio-Optimization-Analysis
+## *Stock-Portfolio-Optimization-Analysis*
 
 ## Code Label = MonteCarelo Simulations, API Keys,Optimized Weights,etc
 
@@ -17,7 +17,7 @@
 ## Code Label = MonteCarelo Simulations, API Keys,Optimized Weights,etc
 
 
-# Stock Return Analysis Using WRDS Data
+## *Stock Return Analysis Using WRDS Data*
 
 ## Code Label = APikeys,QueryingWithSQL,Crspr
 
