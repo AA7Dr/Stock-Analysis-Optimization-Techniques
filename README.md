@@ -1,6 +1,13 @@
 # Description
 ## In this repository I focus on stock based optimizations / analysis techniques . I have labeled each python notes under each title with the phrase code label.
 
+
+
+
+
+
+
+
 # Stock-Portfolio-Optimization-Analysis
 
 ## Code Label = MonteCarelo Simulations, API Keys,Optimized Weights,etc
