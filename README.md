@@ -1,5 +1,5 @@
 # Description
-## In this repository I focus on stock based optimizations / analysis techniques . I have labeled each python file under every title with the phrase "Code Label" for easy navigation and reference. For security reasons, I have removed my API key, username, and password from some of the files. Please ensure to replace them with your own credentials when running the code.
+## In this repository I focus on stock based optimizations / analysis techniques . I have labeled each python file under every title with the phrase "Code Label" for easy navigation and reference. For security reasons, I have removed my API key, username, and password from some of the files. Please ensure to replace them with your own credentials when running the code. Special thanks to Scott Liang for the help and knowledge to run many of these codes. If you would like to reach him or me please contact  me at Armanis Constanzo on LinkedIn.
 
 
 
@@ -33,15 +33,19 @@
 
 
 
-### WTI Crude Oil Price Forecasting with ARIMA, ETS, and Prophet Models
+## *WTI Crude Oil Price Forecasting with ARIMA, ETS, and Prophet Models*
 
-In this project, I analyze the historical WTI Crude Oil prices using time-series forecasting techniques. The data is retrieved from the Federal Reserve Economic Data (FRED) API using the `pandas_datareader` library, and then processed to a monthly frequency. The processed data is converted into a `TimeSeries` object using the Darts library to facilitate time-series modeling.
+## Code Label = Arima,ETS, and Prophet Model TrainingUsingFred
 
-I apply three different forecasting models: ARIMA, Exponential Smoothing (ETS), and Prophet, to predict future values. After splitting the data into training and validation sets, I fit the models on the training data and generate forecasts. The model predictions are then compared visually with the actual validation data. Additionally, I calculate performance metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to assess the accuracy of each model.
-
-The final step involves refitting each model using the full dataset and forecasting the next 24 months of WTI Crude Oil prices. The future forecasts are visualized alongside the original time series for comparison. This project demonstrates proficiency in time-series forecasting, model evaluation, and forecasting future trends using multiple algorithms.
+### In this project, I analyze the historical WTI Crude Oil prices using time-series forecasting techniques. The data is retrieved from the Federal Reserve Economic Data (FRED) API using the `pandas_datareader` library, and then processed to a monthly frequency. The processed data is converted into a `TimeSeries` object using the Darts library to facilitate time-series modeling.I apply three different forecasting models: ARIMA, Exponential Smoothing (ETS), and Prophet, to predict future values. After splitting the data into training and validation sets, I fit the models on the training data and generate forecasts. The model predictions are then compared visually with the actual validation data. Additionally, I calculate performance metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to assess the accuracy of each model. The final step involves refitting each model using the full dataset and forecasting the next 24 months of WTI Crude Oil prices. The future forecasts are visualized alongside the original time series for comparison. This project demonstrates proficiency in time-series forecasting, model evaluation, and forecasting future trends using multiple algorithms.
 
 
+
+## *Discounted Cash Flow (DCF) Valuation of AAPL using Free Cash Flow (FCF) and WACC*
+
+## Code Label = DCF's & ValuationWithnokey
+
+### In this project, I perform a discounted cash flow (DCF) analysis to estimate the intrinsic value of Apple Inc. (AAPL) based on its free cash flows (FCF). Using the Financial Modeling Prep API, I retrieve the company’s cash flow statement and extract FCF data for the last 5 years. The historical growth rate of FCF is calculated, and based on this, I project the FCF for the next 5 years. A terminal value is also estimated using a terminal growth rate of 4%, and the free cash flows and terminal value are discounted to the present value using a weighted average cost of capital (WACC) of 8%. To account for the company’s net debt, I fetch the balance sheet data, calculate net debt, and subtract it from the enterprise value to determine the equity value. Finally, I estimate the price per share based on the number of shares outstanding. 
 
 
 
