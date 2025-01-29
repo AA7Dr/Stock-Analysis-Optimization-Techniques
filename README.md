@@ -1,5 +1,9 @@
 # Description
-## In this repository I focus on stock based optimizations / analysis techniques . I have labeled each python notes under each title with the phrase code label.
+## In this repository I focus on stock based optimizations / analysis techniques . I have labeled each python file under every title with the phrase "Code Label" for easy navigation and reference.
+
+
+
+
 
 
 
