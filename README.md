@@ -49,7 +49,7 @@
 
 
 
-## * Stock Technical Analysis with Multiple Indicators: SMAs, WMA, Bollinger Bands, MACD, and RSI *
+## *Stock Technical Analysis with Multiple Indicators: SMAs, WMA, Bollinger Bands, MACD, and RSI*
 
 ## Code Label = Examples of taking portfolios and graphing Indicators and Bollinger Bands
 
