@@ -49,4 +49,32 @@
 
 
 
+## * Stock Technical Analysis with Multiple Indicators: SMAs, WMA, Bollinger Bands, MACD, and RSI *
 
+## Code Label = Examples of taking portfolios and graphing Indicators and Bollinger Bands
+
+
+### In this project, I perform technical analysis on a selection of stocks using various indicators such as Simple Moving Averages (SMA), Weighted Moving Average (WMA), Bollinger Bands, MACD, and Relative Strength Index (RSI). The data is retrieved using the `yfinance` library and is then processed for each ticker from January 2023 to January 2024. For each stock, I calculate SMAs for different time windows (90 and 70 periods), WMA, Bollinger Bands, MACD, and RSI using `pandas_ta` for technical indicators. The results are visualized using `mplfinance` for candlestick charting, with added trendlines, and `matplotlib` for MACD and RSI plots. The visualizations help track stock price movements and assess overbought or oversold conditions, providing insights for traders and analysts.
+
+
+
+## *Fama-French Three-Factor Model Analysis for Apple (AAPL) Stock*
+
+## Code Label = Fama-French Three-Factor Data RegressionTraining
+
+### In this project, I analyze the relationship between Apple Inc.'s (AAPL) stock returns and the Fama-French three-factor model, which includes the Market Risk Premium (Mkt-RF), the Size Premium (SMB), and the Value Premium (HML). The data for the Fama-French factors is retrieved from the `pandas_datareader` API, covering the period from 2010 to 2020, while the stock data for Apple is fetched from Yahoo Finance.The analysis begins with data preprocessing, including aligning the Fama-French factors with Apple's stock returns and calculating excess returns. I then fit an Ordinary Least Squares (OLS) regression model to predict Apple’s excess returns using the Fama-French factors as predictors. The model’s performance is evaluated, and visualizations are provided for each factor’s contribution to excess returns, along with a bar plot of the regression coefficients and p-values. The results offer insights into how market risk, size, and value factors influence Apple's stock performance during the analysis period.
+
+
+
+## *Fama-French Five-Factor Model with Momentum for Apple (AAPL) Stock*
+
+## Code Label = FF5 OLS Regression training
+
+### This analysis uses the Fama-French Five-Factor Model with an added Momentum factor to explain Apple Inc.'s (AAPL) stock returns from 2010 to 2020. The Fama-French Five-Factor Model includes five factors: Market Risk Premium (Mkt-RF), Size Premium (SMB), Value Premium (HML), Profitability (RMW), and Investment (CMA). Additionally, the Momentum (Mom) factor is incorporated to capture the impact of stock price momentum on AAPL's returns.The data for the Fama-French factors and the Momentum factor is retrieved from the `pandas_datareader` API, and stock data for Apple is fetched from Yahoo Finance. After aligning the factors with Apple's stock returns, I calculate the **excess returns** by subtracting the risk-free rate (RF) from the stock returns. I then fit an Ordinary Least Squares (OLS) regression model to estimate the relationship between Apple's excess returns and the Fama-French factors. The project visualizes the behavior of the Fama-French factors and the Momentum factor over time, and the regression results are analyzed to understand the significance and impact of each factor on Apple's stock performance. The regression model’s alpha (constant term) represents any unexplained portion of the returns, offering insights into whether Apple outperforms the market beyond the factors considered.
+
+
+## *Housing Price Prediction and Bitcoin Price Forecasting*
+
+## Code Label = FutureHousing_BitCoinForCastForMultipleRegressions
+
+### The script provides a comprehensive approach to predicting housing and Bitcoin prices using both regression and time series forecasting models. By evaluating multiple models, we gain insights into which models perform best for different types of time series data. The visualizations and performance metrics allow for a clear comparison of model accuracy and help inform decision-making for forecasting future prices.
