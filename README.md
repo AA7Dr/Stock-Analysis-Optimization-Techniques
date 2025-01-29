@@ -31,3 +31,18 @@
 ### In this project, I use the Financial Modeling Prep (FMP) API to fetch key financial ratios (P/E ratio and D/E ratio) for various companies, including Apple (AAPL), Microsoft (MSFT), Google (GOOG), Amazon (AMZN), and NVIDIA (NVDA). The data is then processed into a pandas DataFrame where each entry includes the company name, the quarter, the P/E ratio, and the D/E ratio. I consolidate the financial data for all companies into a single DataFrame and convert the "Quarter" column to a pandas datetime format for proper time-series analysis. Using Plotly, I create a subplot with two charts: one for P/E ratios and the other for D/E ratios, plotted over time for each company. These plots allow for an insightful comparison of how each company’s P/E and D/E ratios evolve across different quarters. 
 
 
+
+
+### WTI Crude Oil Price Forecasting with ARIMA, ETS, and Prophet Models
+
+In this project, I analyze the historical WTI Crude Oil prices using time-series forecasting techniques. The data is retrieved from the Federal Reserve Economic Data (FRED) API using the `pandas_datareader` library, and then processed to a monthly frequency. The processed data is converted into a `TimeSeries` object using the Darts library to facilitate time-series modeling.
+
+I apply three different forecasting models: ARIMA, Exponential Smoothing (ETS), and Prophet, to predict future values. After splitting the data into training and validation sets, I fit the models on the training data and generate forecasts. The model predictions are then compared visually with the actual validation data. Additionally, I calculate performance metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to assess the accuracy of each model.
+
+The final step involves refitting each model using the full dataset and forecasting the next 24 months of WTI Crude Oil prices. The future forecasts are visualized alongside the original time series for comparison. This project demonstrates proficiency in time-series forecasting, model evaluation, and forecasting future trends using multiple algorithms.
+
+
+
+
+
+
