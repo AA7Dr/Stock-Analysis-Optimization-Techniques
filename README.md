@@ -40,6 +40,10 @@
 
 ### In this project, I analyze the historical WTI Crude Oil prices using time-series forecasting techniques. The data is retrieved from the Federal Reserve Economic Data (FRED) API using the pandas_datareader library, and then processed to a monthly frequency. The processed data is converted into a TimeSeries object using the Darts library to facilitate time-series modeling.I apply three different forecasting models: ARIMA, Exponential Smoothing (ETS), and Prophet, to predict future values. After splitting the data into training and validation sets, I fit the models on the training data and generate forecasts. The model predictions are then compared visually with the actual validation data. Additionally, I calculate performance metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to assess the accuracy of each model. The final step involves refitting each model using the full dataset and forecasting the next 24 months of WTI Crude Oil prices. The future forecasts are visualized alongside the original time series for comparison. This project demonstrates proficiency in time-series forecasting, model evaluation, and forecasting future trends using multiple algorithms.
 
+![image](https://github.com/user-attachments/assets/62abeccf-18ce-4a85-8885-7038123178d7)
+
+![image](https://github.com/user-attachments/assets/24df8e41-e1d0-4844-9811-ee36b69602d4)
+
 
 
 ## *Discounted Cash Flow (DCF) Valuation of AAPL using Free Cash Flow (FCF) and WACC*
