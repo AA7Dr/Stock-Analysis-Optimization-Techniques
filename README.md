@@ -74,7 +74,7 @@
 ![image](https://github.com/user-attachments/assets/69f531cf-c753-456d-a7c9-4a165358d709)
 ![image](https://github.com/user-attachments/assets/2e9171c6-1e14-42f2-ba6e-313ee39b13fb)
 
-### - More charts will be printed if code is run but for demonstration purposes I kept it to show only one company
+### - Although more charts will be generated when the code is run, I’ve limited the output to show only one company for demonstration purposes.
 
 
 
@@ -91,7 +91,7 @@
 
 ![image](https://github.com/user-attachments/assets/6b247818-4a3e-4488-a58d-af956ee3089e)
 
-### - More charts will be printed if code is run but for demonstration purposes I kept it to show only two
+### - Although more charts will be generated when the code is run, I’ve limited the output to show only two charts for demonstration purposes.
 
 
 
