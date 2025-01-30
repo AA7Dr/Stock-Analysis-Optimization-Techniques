@@ -1,5 +1,5 @@
 # Description
-## In this repository I focus on some of the stock based optimizations / analysis techniques I have learned. I have labeled each python file under every title with the phrase "Code Label" for easy navigation and reference. For security reasons, I have removed my API key, username, and password from some of the files. Please ensure to replace them with your own credentials when running the code. Special thanks to Scott Liang for the help and knowledge to run many of these codes. If you would like to reach him or me please contact  me at Armanis Constanzo on LinkedIn.
+## In this repository I focus on some of the stock based optimizations / analysis techniques I have learned. I have labeled each python file under every title with the phrase "Code Label" for easy navigation and reference. For security reasons, I have removed my API key, username, and password from some of the files.Please ensure to replace them with your own credentials when running the code. Also remember to change file paths.  Special thanks to Scott Liang for the help and knowledge to run many of these codes. If you would like to reach him or me please contact  me at Armanis Constanzo on LinkedIn.
 
 
 
