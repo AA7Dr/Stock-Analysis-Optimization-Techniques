@@ -32,6 +32,7 @@
 
 ### In this project, I use the Financial Modeling Prep (FMP) API to fetch key financial ratios (P/E ratio and D/E ratio) for various companies, including Apple (AAPL), Microsoft (MSFT), Google (GOOG), Amazon (AMZN), and NVIDIA (NVDA). The data is then processed into a pandas DataFrame where each entry includes the company name, the quarter, the P/E ratio, and the D/E ratio. I consolidate the financial data for all companies into a single DataFrame and convert the "Quarter" column to a pandas datetime format for proper time-series analysis. Using Plotly, I create a subplot with two charts: one for P/E ratios and the other for D/E ratios, plotted over time for each company. These plots allow for an insightful comparison of how each company’s P/E and D/E ratios evolve across different quarters. 
 
+![image](https://github.com/user-attachments/assets/25b09cce-4a0c-4f71-b896-7b61dc65eb1e)
 
 
 
@@ -54,6 +55,7 @@
 ### In this project, I perform a discounted cash flow (DCF) analysis to estimate the intrinsic value of Apple Inc. (AAPL) based on its free cash flows (FCF). Using the Financial Modeling Prep API, I retrieve the company’s cash flow statement and extract FCF data for the last 5 years. The historical growth rate of FCF is calculated, and based on this, I project the FCF for the next 5 years. A terminal value is also estimated using a terminal growth rate of 4%, and the free cash flows and terminal value are discounted to the present value using a weighted average cost of capital (WACC) of 8%. To account for the company’s net debt, I fetch the balance sheet data, calculate net debt, and subtract it from the enterprise value to determine the equity value. Finally, I estimate the price per share based on the number of shares outstanding. 
 
 
+![image](https://github.com/user-attachments/assets/51f676cd-85ae-4a23-8880-fd4b8cb9c783)
 
 
 
@@ -85,9 +87,11 @@
 ### In this project, I analyze the relationship between Apple Inc.'s (AAPL) stock returns and the Fama-French three-factor model, which includes the Market Risk Premium (Mkt-RF), the Size Premium (SMB), and the Value Premium (HML). The data for the Fama-French factors is retrieved from the pandas_datareader API, covering the period from 2010 to 2020, while the stock data for Apple is fetched from Yahoo Finance.The analysis begins with data preprocessing, including aligning the Fama-French factors with Apple's stock returns and calculating excess returns. I then fit an Ordinary Least Squares (OLS) regression model to predict Apple’s excess returns using the Fama-French factors as predictors. The model’s performance is evaluated, and visualizations are provided for each factor’s contribution to excess returns, along with a bar plot of the regression coefficients and p-values. The results offer insights into how market risk, size, and value factors influence Apple's stock performance during the analysis period.
 
 
+![image](https://github.com/user-attachments/assets/a080388d-3356-4e7c-b90f-1097b2baf31e)
 
+![image](https://github.com/user-attachments/assets/6b247818-4a3e-4488-a58d-af956ee3089e)
 
-
+### - More charts will be printed if code is run but for demonstration purposes I kept it to show only two
 
 
 
@@ -99,6 +103,7 @@
 
 
 
+![image](https://github.com/user-attachments/assets/a6f3c1fa-adee-48b7-b76a-7afd4f5b6c97)
 
 
 
