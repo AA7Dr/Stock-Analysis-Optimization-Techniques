@@ -22,6 +22,7 @@
 
 ### In this project we connected to the WRDS database and extracted monthly stock return data from the CRSP database for companies since 2010. Cleaned the data, calculated compounded returns, and aggregated monthly returns to compute annual returns by stock. Merged stock return data with company information (tickers and names) to enrich the dataset. Calculated the average annual return for each year and visualized the trends with a line graph. This processed involved SQL querying, data processing, and financial analysis with Python.
 
+![image](https://github.com/user-attachments/assets/19c31b05-a60b-48a0-af32-070e6c5c09fa)
 
 
 
@@ -54,12 +55,26 @@
 
 
 
+
+
+
+
+
 ## *Stock Technical Analysis with Multiple Indicators: SMAs, WMA, Bollinger Bands, MACD, and RSI*
 
 ## Code Label = Examples of taking portfolios and graphing Indicators and Bollinger Bands
 
 
 ### In this project, I perform technical analysis on a selection of stocks using various indicators such as Simple Moving Averages (SMA), Weighted Moving Average (WMA), Bollinger Bands, MACD, and Relative Strength Index (RSI). The data is retrieved using the `yfinance` library and is then processed for each ticker from January 2023 to January 2024. For each stock, I calculate SMAs for different time windows (90 and 70 periods), WMA, Bollinger Bands, MACD, and RSI using pandas_ta for technical indicators. The results are visualized using `mplfinance` for candlestick charting, with added trendlines, and `matplotlib` for MACD and RSI plots. The visualizations help track stock price movements and assess overbought or oversold conditions, providing insights for traders and analysts.
+
+
+![image](https://github.com/user-attachments/assets/af88fd0a-680e-412f-b6c0-6be610df866e)
+![image](https://github.com/user-attachments/assets/69f531cf-c753-456d-a7c9-4a165358d709)
+![image](https://github.com/user-attachments/assets/2e9171c6-1e14-42f2-ba6e-313ee39b13fb)
+
+### - More charts will be printed if code is run but for demonstration purposes I kept it to show only one company
+
+
 
 
 
@@ -71,6 +86,11 @@
 
 
 
+
+
+
+
+
 ## *Fama-French Five-Factor Model with Momentum for Apple (AAPL) Stock*
 
 ## Code Label = FF5 OLS Regression training
@@ -78,11 +98,24 @@
 ### This project analysis the Fama-French Five-Factor Model with an added Momentum factor to explain Apple Inc.'s (AAPL) stock returns from 2010 to 2020. The Fama-French Five-Factor Model includes five factors: Market Risk Premium (Mkt-RF), Size Premium (SMB), Value Premium (HML), Profitability (RMW), and Investment (CMA). Additionally, the Momentum (Mom) factor is incorporated to capture the impact of stock price momentum on AAPL's returns.The data for the Fama-French factors and the Momentum factor is retrieved from the pandas_datareader API, and stock data for Apple is fetched from Yahoo Finance. After aligning the factors with Apple's stock returns, I calculate the **excess returns** by subtracting the risk-free rate (RF) from the stock returns. I then fit an Ordinary Least Squares (OLS) regression model to estimate the relationship between Apple's excess returns and the Fama-French factors. The project visualizes the behavior of the Fama-French factors and the Momentum factor over time, and the regression results are analyzed to understand the significance and impact of each factor on Apple's stock performance. The regression model’s alpha (constant term) represents any unexplained portion of the returns, offering insights into whether Apple outperforms the market beyond the factors considered.
 
 
+
+
+
+
+
+
 ## *Housing Price Prediction and Bitcoin Price Forecasting*
 
 ## Code Label = FutureHousing_BitCoinForCastForMultipleRegressions
 
 ### This project provides a comprehensive approach to predicting housing and Bitcoin prices using both regression and time series forecasting models. By evaluating multiple models, we gain insights into which models perform best for different types of time series data. The visualizations and performance metrics allow for a clear comparison of model accuracy and help inform decision-making for forecasting future prices.
+
+
+
+![image](https://github.com/user-attachments/assets/97a0dc44-7d3a-4bde-a2a2-d1452cf53166)
+![image](https://github.com/user-attachments/assets/ca5334d4-52ee-4b14-a55c-363d1583aaa9)
+
+
 
 
 
