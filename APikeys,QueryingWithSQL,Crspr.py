@@ -13,71 +13,53 @@ import matplotlib.pyplot as plt
 
 #%%
 
-db = wrds.Connection(wrds_username = "username", wrds_password = "PW") #Your username and PW
+db = wrds.Connection(wrds_username = "username", wrds_password = "password") #Your username and PW
 
-#%%
-#permno = unique identifier 
-
+#%% Query for monthly data from CRSP database
 query = """
     SELECT permno, date, ret    
     FROM crsp.msf
     WHERE date >= '2010-01-01'
 """
-    
 
-monthly_data =db.raw_sql(query)
+monthly_data = db.raw_sql(query) #Permno = unique identifiers of tickers
 
-#%%
-
-
+#%% Query for ticker data
 ticker_query = """
     SELECT permno, ticker, comnam   
     FROM crsp.stocknames
 """
-ticker_data =db.raw_sql(ticker_query)
-    
-db.close() #Closes connection to DB
+ticker_data = db.raw_sql(ticker_query)
 
-#%%
+db.close()  # Close connection to DB
 
+#%% Preprocessing of monthly data
+monthly_data['date'] = pd.to_datetime(monthly_data['date'])  # Convert date column to datetime
+monthly_data.dropna(subset=['ret'], inplace=True)  # Drop rows where 'ret' is NaN
+monthly_data['compound_ret'] = 1 + monthly_data['ret']  # Calculate compounded return
+monthly_data['year'] = monthly_data['date'].dt.year  # Extract year from date
 
+#%% Calculate annual returns
+annual_returns = monthly_data.groupby(['permno', 'year'])['compound_ret'].prod() - 1
 
-monthly_data['date']= pd.to_datatime(monthly_data['date'])
+# Rename the columns of annual_returns DataFrame
+annual_returns = annual_returns.reset_index()  # Reset index to get 'permno' and 'year' as columns
+annual_returns.columns = ['permno', 'year', 'annual_ret']  # Rename columns properly
 
-monthly_data.dropna(subset = ['ret'],inplace = True ) #Inplace = replace #subset = what columns your looking for N/A's
+#%% Merge the annual returns with the ticker data
+annual_returns = annual_returns.merge(ticker_data, on='permno', how='left')
 
-monthly_data['compound_ret'] = 1+monthly_data['ret'] 
+print(annual_returns)  # Print the merged dataset
 
-monthly_data['year'] = monthly_data['date'].dt.year #date.year
-
-
-#%%
-
-
-annual_returns = monthly_data.groupby(['permno','year'])['compound_ret'].prod()-1
-
-annual_returns.column = ['permno', 'year', 'annual_ret']
-
-#%%
-
-
-annual_returns = annual_returns.merge(ticker_data, on = 'permno', how = 'left') #Merge datasets ticker_query and query to have super dataset
-
-print(annual_returns)
-
-
-#%%
-
+#%% Calculate average annual returns
 average_annual_returns = annual_returns.groupby('year')['annual_ret'].mean().reset_index()
 
-#%%
-
-plt.figure(figsize =(10,6))
-plt.plot(average_annual_returns['year'],
-         average_annual_returns['annual_ret'],
-         marker='o',
-         color='g')
-
+#%% Plot the average annual returns
+plt.figure(figsize=(10, 6))
+plt.plot(average_annual_returns['year'], average_annual_returns['annual_ret'], marker='o', color='g')
 plt.grid()
+plt.title('Average Annual Returns')
+plt.xlabel('Year')
+plt.ylabel('Average Annual Return')
 plt.show()
 
