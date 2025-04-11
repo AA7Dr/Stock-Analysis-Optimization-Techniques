@@ -116,7 +116,7 @@
 
 ## Python Script : FutureHousing_BitCoinForCastForMultipleRegressions
 
-### This project provides a comprehensive approach to predicting housing and Bitcoin prices using both regression and time series forecasting models. By evaluating multiple models, we gain insights into which models perform best for different types of time series data. The visualizations and performance metrics allow for a clear comparison of model accuracy and help inform decision-making for forecasting future prices.
+### This project provides a comprehensive approach to predicting housing and Bitcoin prices using both regression and time series forecasting models ( However OLS regressions are overfit). By evaluating multiple models, we gain insights into which models perform best for different types of time series data. The visualizations and performance metrics allow for a clear comparison of model accuracy and help inform decision-making for forecasting future prices. 
 
 
 
